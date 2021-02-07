@@ -34,9 +34,37 @@
 // console.log(console);
 // console.log(document);
 
-function sayHello(nameOfFriend, age){
-    console.log('Hello!', nameOfFriend,"You have", age, "years old.");
-}
+// function sayHello(nameOfFriend, age){
+//     document.write(`Hello ${nameOfFriend}, You have ${age} years old.`);
+//     return `Hello ${nameOfFriend}, You have ${age} years old.`;
+// }
+// const greetJini = sayHello("Jini", 32);
+// console.log(greetJini);
 
-sayHello("Nicole","32");
+const calculator = {
+    plus: function(a, b){
+        return a+b;    
+    },
+    minus: function(a, b){
+        return a-b;
+    },
+    multifly: function(a, b){
+        return a*b;
+    },
+    divide: function(a, b){
+        return a/b;
+    },
+    square: function(a,b){
+        return a**b;
+    }
 
+};
+let firstNumber = 5;
+let secondNumber = 4;
+const plus = calculator.plus(firstNumber, secondNumber);
+const minus = calculator.minus(firstNumber, secondNumber);
+const multifly = calculator.multifly(firstNumber, secondNumber);
+const divide = calculator.divide(firstNumber,secondNumber);
+const square = calculator.square(firstNumber,secondNumber);
+
+document.write(`plus: ${plus}, minus: ${minus}, multifly: ${multifly}, divide: ${divide}, square: ${square}`);
