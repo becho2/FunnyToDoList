@@ -67,4 +67,33 @@ const multifly = calculator.multifly(firstNumber, secondNumber);
 const divide = calculator.divide(firstNumber,secondNumber);
 const square = calculator.square(firstNumber,secondNumber);
 
-document.write(`plus: ${plus}, minus: ${minus}, multifly: ${multifly}, divide: ${divide}, square: ${square}`);
+// document.write(`plus: ${plus}, minus: ${minus}, multifly: ${multifly}, divide: ${divide}, square: ${square}`);
+// console.dir(title);
+// title.innerHTML="Hi! From JS";
+// title.style.color = 'red'
+
+// document.title = 'I own you now';
+
+const title = document.getElementById("title");
+
+const BASE_COLOR = "#34495e";
+const OTHER_COLOR = "#7f8c8d";
+
+function handleClick(event)
+{   
+    const currentColor = title.style.color;
+    if(currentColor === BASE_COLOR){
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
+}
+
+function init(){
+    title.style.color = BASE_COLOR;
+    title.addEventListener("click", handleClick);
+
+
+}
+init();
+
