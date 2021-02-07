@@ -41,31 +41,31 @@
 // const greetJini = sayHello("Jini", 32);
 // console.log(greetJini);
 
-const calculator = {
-    plus: function(a, b){
-        return a+b;    
-    },
-    minus: function(a, b){
-        return a-b;
-    },
-    multifly: function(a, b){
-        return a*b;
-    },
-    divide: function(a, b){
-        return a/b;
-    },
-    square: function(a,b){
-        return a**b;
-    }
+// const calculator = {
+//     plus: function(a, b){
+//         return a+b;    
+//     },
+//     minus: function(a, b){
+//         return a-b;
+//     },
+//     multifly: function(a, b){
+//         return a*b;
+//     },
+//     divide: function(a, b){
+//         return a/b;
+//     },
+//     square: function(a,b){
+//         return a**b;
+//     }
 
-};
-let firstNumber = 5;
-let secondNumber = 4;
-const plus = calculator.plus(firstNumber, secondNumber);
-const minus = calculator.minus(firstNumber, secondNumber);
-const multifly = calculator.multifly(firstNumber, secondNumber);
-const divide = calculator.divide(firstNumber,secondNumber);
-const square = calculator.square(firstNumber,secondNumber);
+// };
+// let firstNumber = 5;
+// let secondNumber = 4;
+// const plus = calculator.plus(firstNumber, secondNumber);
+// const minus = calculator.minus(firstNumber, secondNumber);
+// const multifly = calculator.multifly(firstNumber, secondNumber);
+// const divide = calculator.divide(firstNumber,secondNumber);
+// const square = calculator.square(firstNumber,secondNumber);
 
 // document.write(`plus: ${plus}, minus: ${minus}, multifly: ${multifly}, divide: ${divide}, square: ${square}`);
 // console.dir(title);
@@ -74,26 +74,36 @@ const square = calculator.square(firstNumber,secondNumber);
 
 // document.title = 'I own you now';
 
-const title = document.getElementById("title");
+const title = document.querySelector("#title");
 
-const BASE_COLOR = "#34495e";
-const OTHER_COLOR = "#7f8c8d";
+const CLICKED_CLASS = "clicked";
 
-function handleClick(event)
-{   
-    const currentColor = title.style.color;
-    if(currentColor === BASE_COLOR){
-        title.style.color = OTHER_COLOR;
+function handleClick(){
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    if(!hasClass){
+        title.classList.add(CLICKED_CLASS);
     } else {
-        title.style.color = BASE_COLOR;
-    }
+        title.classList.remove(CLICKED_CLASS);
+    } 
+    // document. = CLICKED_CLASS;
 }
+
+// const BASE_COLOR = "rgb(21, 33, 11)";
+// const OTHER_COLOR = "#3297a8";
+
+// function handleClick(){   
+//     const currentColor = title.style.color;
+//     if(currentColor === BASE_COLOR){
+//         // title.style.color = OTHER_COLOR;
+//     } else {
+//         // title.style.color = BASE_COLOR;
+//     }
+// }
 
 function init(){
-    title.style.color = BASE_COLOR;
+    // title.style.color = BASE_COLOR;
     title.addEventListener("click", handleClick);
-
-
 }
 init();
+
 
