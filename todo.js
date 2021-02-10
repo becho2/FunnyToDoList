@@ -14,12 +14,13 @@ const TODOS_LS = 'toDos';
 function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.value = "❌";
+    delBtn.innerHTML = "❌";
     const span = document.createElement("span");
     span.innerText = text;
-    toDoList.appendChild(li);
-    li.appendChild(span);
     li.appendChild(delBtn);
+    li.appendChild(span);
+
+    toDoList.appendChild(li);
     
 }
 
