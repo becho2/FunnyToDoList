@@ -9,7 +9,7 @@ const IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `imgs/${imgNumber + 1}.jpg`;
+    image.src = `https://source.unsplash.com/category/nature/weekly`;
     image.classList.add("bgImage");
     body.appendChild(image);
     // image.addEventListener("loadend",handleImgLoad)
