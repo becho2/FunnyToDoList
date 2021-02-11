@@ -1,14 +1,14 @@
 body{
   background-color: peru;
+  color: #34495e;
+}
 
+h1{
+  text-align: center;
 }
 
 .btn{
   cursor: pointer;
-}
-
-body{
-  color: #34495e; 
 }
 
 .clicked{
@@ -20,8 +20,12 @@ body{
   display: none;
 }
 
+.greetings{
+  text-align: center;
+}
+
 .showing{
-  display: block; 
+  display: block;
 }
 
 @keyframes fadeIn{
