@@ -1,3 +1,5 @@
+
+const UNSPLASH_API_KEY = "u6tWjbvOWBGP-qtcuKtMOlRSbJ-_mgw2UhmahMp6nMI"; 
 const body = document.querySelector("body");
 
 const IMG_NUMBER = 3;
@@ -8,6 +10,8 @@ const IMG_NUMBER = 3;
 // }
 
 function paintImage(imgNumber){
+    const unsplash = unsplash.photos.getPhoto(`UNSPLASH_API_KEY`);
+	console.log('unsplash');
     const image = new Image();
     image.src = `https://source.unsplash.com/category/nature/weekly`;
     image.classList.add("bgImage");
