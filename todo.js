@@ -8,18 +8,16 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 const TODOS_LS = 'toDos';
 const toDos = [];
 
-function saveToDos(array){
- 
-    // toDos = toDos.push(text);
-    // console.log(toDos);
-    localStorage.setItem(TODOS_LS, JSON.stringify(array));
+function saveToDos(){
+    localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 } 
 //혼자 해보려다 실패
 
 function handleDelBtn(event){
-    const currentToDo_li = event.target.id;
-    currentToDo_li.remove();
-
+    const currentToDosId = event.target.id;
+    const currentToDosLi = toDoList.querySelector(`#${currentToDosId}`);
+    // currentToDosLi.remove();
+    // toDos.splice()
 }
 
 function paintToDo(text){
@@ -38,7 +36,7 @@ function paintToDo(text){
         id: newId
     };
     toDos.push(toDoObj);
-    saveToDos(toDos);
+    saveToDos();
 }
 
 function handleSubmit(event){
@@ -49,10 +47,21 @@ function handleSubmit(event){
     toDoInput.value = "";
 }
 
+// function paintParsedToDo(toDo){
+//     paintToDo(toDo.text);
+// }
+
 function loadToDos(){
     const loadedTodos = localStorage.getItem(TODOS_LS);
     if(loadedTodos !== null){
         // toDoList.innerText = `${toDos}`;
+        // JSON형태로 저장돼있는 ToDos array를 다시 javascript 데이터타입으로 가져오자
+        const parsedToDos = JSON.parse(loadedTodos);
+        // foreach의 괄호 안에 바로 함수를 만들기
+        parsedToDos.forEach(function(toDo){
+            paintToDo(toDo.text);
+        });
+        
     }
 
 }
