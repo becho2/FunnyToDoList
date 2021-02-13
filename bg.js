@@ -8,13 +8,13 @@ function paintImage(imgNumber){
     // const unsplash = unsplash.photos.getPhoto(`UNSPLASH_API_KEY`);
 	// console.log('unsplash');
     const image = new Image();
-    image.src = `https://imgs/${imgNumber}`;
+    image.src = `imgs/${imgNumber}.jpg`;
     image.classList.add("bgImage");
     body.appendChild(image);
 }
 
 function genRandom(){
-    const number = Math.floor(Math.random() * IMG_NUMBER);
+    const number = Math.ceil(Math.random() * IMG_NUMBER);
     return number;
 }
 
