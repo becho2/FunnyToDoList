@@ -4,11 +4,6 @@ const body = document.querySelector("body");
 
 const IMG_NUMBER = 2;
 
-
-function handleImgLoad(){
-    console.log("finished log")
-}
-
 function paintImage(imgNumber){
     // const unsplash = unsplash.photos.getPhoto(`UNSPLASH_API_KEY`);
 	// console.log('unsplash');
@@ -16,11 +11,6 @@ function paintImage(imgNumber){
     image.src = `https://imgs/${imgNumber}`;
     image.classList.add("bgImage");
     body.appendChild(image);
-    image.addEventListener("loadend",handleImgLoad)
-
-    body.style.backgroundRepeat = "no-repeat";
-    body.style.backgroundImage = `url('imgs/${imgNumber + 1}.jpg')`;
-    body.style.backgroundSize = "100%";
 }
 
 function genRandom(){
