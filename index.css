@@ -1,6 +1,10 @@
 body{
   background-color: black;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-image: url('imgs/2.jpg');
   background-size: cover;
   border: 1px solid red; */
@@ -12,11 +16,13 @@ body{
 }
 
 .js-weather{
-  background-color: powderblue;
+  background-color: rgba(176, 224, 230, 0.63);
+  font-size: 1.5rem;
 }
 
 h1{
   text-align: center;
+  
 }
 
 .btn{
