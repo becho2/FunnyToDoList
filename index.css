@@ -1,46 +1,78 @@
 body{
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
+  margin:0;
   min-height: 100vh;
-  /* background-image: url('imgs/2.jpg');
+  background-image: url('imgs/2.jpg');
   background-size: cover;
-  border: 1px solid red; */
+  color: white;
+  font-family: 'Cute Font', cursive;
+  font-size: 5rem;
+  /* border: 1px solid red; */
 }
 
 .container{
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  align-content: space-between;
   /* justify-content: center;
   align-items: center; */
 }
+
 header{
+  font-family: 'Bebas Neue', cursive;
   border-bottom: 3px solid black;
+  text-align: right;
 }
+.js-weather, .js-place{
+  background-color: rgba(176, 224, 230, 0.63);
+  font-size: 0.4em;
+  margin-right: 20px;
+}
+
 .content{
   display: flex;
+  min-height: 80vh;
   flex-grow: 1;
 }
-.content>nav{
-  border-right: 3px solid black;
+
+.toDoList{
+  display: inline-block;
 }
-.content aside{
-  border-left: 3px solid black;
+.js-toDoForm{
+  display: inline-block;
 }
-nav, aside{
-  flex-basis: 150px;
+.js-toDoForm>input{
+  border: 0;
+  outline: 0;
+  padding: 7px 0;
+  background: transparent;
+  /* transition: border-color 0.2s; */
 }
+.js-toDoForm>input::placeholder{
+  color: white;
+  font-family: 'Cute Font', cursive;
+  font-size: 2em;
+}
+.js-toDoList{
+  font-size: 0.4em;
+}
+
 main {
   flex-basis: 100%;
 }
 
-.js-weather{
-  background-color: rgba(176, 224, 230, 0.63);
-  font-size: 1.5rem;
+footer{
+  text-align: center;
+  font-size: 0.5em;
+  margin-bottom: 50px;
 }
+
 
 h1{
   text-align: center;
+  margin: 0;
   
 }
 

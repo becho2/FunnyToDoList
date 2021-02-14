@@ -15,14 +15,20 @@ let quotes = [
     "일 년 중 아무것도 할 수 없는 날이 딱 이틀 있다. 하나는 어제이고, 하나는 내일이다. 오늘이 바로 사랑하고, 믿고, 행하고, 무엇보다도 '살아갈' 바로 그날이다. - 달라이 라마"
 ]
 
-let countQuotes = quotes.length;
+const countQuotes = quotes.length;
 
-function paintQuotes(){
-    
+function paintQuotes(random){
+    footer.innerText = `${quotes[`${random}`]}`
+}
+
+function genRandomQuotes(){
+    const randomQuotes = Math.floor(Math.random() * countQuotes);
+    return randomQuotes;
 }
 
 function init(){
-    paintQuotes();
+    const randomQuotesNum = genRandomQuotes();
+    paintQuotes(randomQuotesNum);
 }
 
 init();

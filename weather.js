@@ -1,4 +1,5 @@
 const weather = document.querySelector(".js-weather");
+const placeNow = document.querySelector(".js-place");
 
 const API_KEY = "e001c360e380e962aae65ca7b9713afb";
 //좌표 라는 뜻
@@ -14,7 +15,8 @@ function getWeather(lat, lon){
     }).then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature}'C @ ${place}`;
+        weather.innerText = `${temperature}°C`;
+        placeNow.innerText = `${place}`;
     });
 }
 

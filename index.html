@@ -6,26 +6,31 @@
   <title>You're Okay</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="index.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="js-weather"></div>
+      <span class="js-weather"></span>
+      <span class="js-place"></span>
     </header>
 
     <section class="content">
-      <nav>
-        <form class="js-toDoForm">
-          <input type="text" placeholder="Write a to do" />
-        </form>
-        <ul class="js-toDoList">
+      
 
-        </ul>
-      </nav>
       <main>
-        d\
+        <div class="toDoList">
+          <form class="js-toDoForm">
+            <input type="text" placeholder="할 일 적어두기" />
+          </form>
+          <ul class="js-toDoList">
+          </ul>
+        </div>
+
         <div class="js-clock">
           <h1></h1>
         </div>
@@ -34,10 +39,7 @@
         </form>
         <h4 class="js-greetings greetings"></h4>
       </main>
-      <aside>
-        Hey
-      </aside>
-      
+
     </section>
     <footer>
       <h2></h2>
@@ -46,7 +48,7 @@
   <script src="clock.js"></script>
   <script src="greeting.js"></script>
   <script src="todo.js"></script>
-  <script src="bg.js"></script>
+  <!-- <script src="bg.js"></script> -->
   <script src="weather.js"></script>
   <script src="quotes.js"></script>
 
