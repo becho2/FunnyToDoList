@@ -3,7 +3,7 @@ body{
   color: white; */
   margin:0;
   min-height: 100vh;
-  background-image: url('imgs/2.jpg');
+  background-image: url('https://source.unsplash.com/collection/43031066');
   background-size: cover;
   color: white;
   font-family: 'Cute Font', cursive;
@@ -22,7 +22,7 @@ body{
 
 header{
   font-family: 'Bebas Neue', cursive;
-  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid black; */
   text-align: right;
 }
 .js-weather, .js-place{
@@ -38,35 +38,49 @@ header{
 }
 
 .toDoList{
+
   display: inline-block;
 }
 .js-toDoForm{
+
   display: inline-block;
 }
-.js-toDoForm>input{
+input{
+  color: white;
+  font-family: 'Cute Font', cursive;
+  font-size: 0.4em;
+  text-align: center;
+  width: 350px;
   border: 0;
   outline: 0;
   padding: 7px 0;
   background: transparent;
   /* transition: border-color 0.2s; */
 }
-.js-toDoForm>input::placeholder{
+input::placeholder{
   color: white;
   font-family: 'Cute Font', cursive;
-  font-size: 2em;
+  font-size: 1em;
 }
 .js-toDoList{
+  margin-left: 50px;
   font-size: 0.4em;
 }
 
 main {
   flex-basis: 100%;
 }
-
+.center{
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top:30%;
+}
 footer{
+  background-color: rgba(176, 224, 230, 0.63);
   text-align: center;
   font-size: 0.5em;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 
