@@ -9,13 +9,29 @@ body{
 
 .container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  /* justify-content: center;
+  align-items: center; */
 }
-
-.weather-container{
+header{
+  border-bottom: 3px solid black;
+}
+.content{
   display: flex;
-  flex-direction: row-reverse;
+  flex-grow: 1;
+}
+.content>nav{
+  border-right: 3px solid black;
+}
+.content aside{
+  border-left: 3px solid black;
+}
+nav, aside{
+  flex-basis: 150px;
+}
+main {
+  flex-basis: 100%;
 }
 
 .js-weather{

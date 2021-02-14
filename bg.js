@@ -8,7 +8,7 @@ function paintImage(imgNumber){
     // const unsplash = unsplash.photos.getPhoto(`UNSPLASH_API_KEY`);
 	// console.log('unsplash');
     const image = new Image();
-    image.src = `imgs/${imgNumber}.jpg`;
+    image.src = `imgs/2.jpg`;
     image.classList.add("bgImage");
     body.appendChild(image);
 }
