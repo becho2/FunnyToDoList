@@ -38,12 +38,33 @@ header{
 }
 
 .toDoList{
+  margin-top: 50px;
+  margin-left: 30px;
+  border-radius: 50px;
   display: inline-block;
+  background-color: rgba(169, 169, 169, 0.514);
 }
 .js-toDoForm{
   display: inline-block;
+
 }
-input{
+.js-toDoForm>input{
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
+  width: 350px;
+  border: 0;
+  outline: 0;
+  padding: 7px 0;
+  background: transparent;
+  margin-left: 50px;
+}
+.js-toDoForm>input::placeholder{
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
+}
+.form>input{
   color: white;
   font-family: 'Cute Font', cursive;
   font-size: 0.4em;
@@ -55,15 +76,17 @@ input{
   background: transparent;
   /* transition: border-color 0.2s; */
 }
-input::placeholder{
+.form>input::placeholder{
   color: white;
   font-family: 'Cute Font', cursive;
   font-size: 1em;
 }
 .js-toDoList{
+  font-family: 'Nanum Myeongjo', serif;
   list-style-type: decimal;
-  margin-left: 50px;
-  font-size: 0.4em;
+  margin-top: 0;
+  margin-left: 25px;
+  font-size: 23px;
 }
 
 main {
@@ -78,8 +101,9 @@ main {
 footer{
   background-color: rgba(176, 224, 230, 0.63);
   text-align: center;
-  font-size: 0.5em;
+  font-size: 27px;
   margin-bottom: 0;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 
