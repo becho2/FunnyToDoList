@@ -11,36 +11,42 @@
 
 <body>
   <div class="container">
-    <div class="weather-container">
-      <div class="js-weather"></div>
-    </div>
+    <header>
+      <div class="weather-container">
+        <div class="js-weather"></div>
+      </div>
+    </header>
 
-    <div class="js-clock">
-      <h1></h1>
-    </div>
-    <form class="js-name-form form" action="">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <!-- <div class="container">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div> -->
-    <ul class="js-toDoList">
+    <section class="content">
+      <nav>
+        <form class="js-toDoForm">
+          <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
 
-    </ul>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+        </ul>
+      </nav>
+      <main>
+        <div class="js-clock">
+          <h1></h1>
+        </div>
+        <form class="js-name-form form" action="">
+          <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </main>
+      
+    </section>
+    <footer>
+
+    </footer>
   </div>
+  <script src="clock.js"></script>
+  <script src="greeting.js"></script>
+  <script src="todo.js"></script>
+  <script src="bg.js"></script>
+  <script src="weather.js"></script>
+
 </body>
 
 </html>
