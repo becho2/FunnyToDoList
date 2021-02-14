@@ -38,11 +38,9 @@ header{
 }
 
 .toDoList{
-
   display: inline-block;
 }
 .js-toDoForm{
-
   display: inline-block;
 }
 input{
@@ -63,6 +61,7 @@ input::placeholder{
   font-size: 1em;
 }
 .js-toDoList{
+  list-style-type: decimal;
   margin-left: 50px;
   font-size: 0.4em;
 }
