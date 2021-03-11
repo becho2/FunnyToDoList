@@ -15,8 +15,8 @@ function getWeather(lat, lon){
     }).then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature}°C`;
-        placeNow.innerText = `${place}`;
+        weather.innerText = `바깥온도: ${temperature}°C`;
+
     });
 }
 
